@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+
+/* pagination */
+
+#page-btn ul {
+    list-style: none;
+    display: flex;
+}
+
+#page-btn ul li {
+    padding: 8px 12px;
+    border: 1px solid #000;
+}
+
+#page-btn ul li.active {
+    color: #fff;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+}
+
+.paginationjs {
+    display: flex;
+    align-items: center;
+}
+
+.paginationjs-go-input {
+    margin-left: 12px;
+    padding-bottom: 18px;
+    max-width: 50px;
+}
+
+.paginationjs-go-input input {
+    width: 100%;
+}
+
+.paginationjs-go-button {
+    padding-bottom: 18px;
+    margin-left: 12px;
+}
+
+
+/* end */
+
+
+/* login */
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.home {
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+form {
+    border-radius: 16px;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    padding: 50px 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+form h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.err-msg {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: red;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+form .form-group {
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    color: #eee;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none
+}
+
+form input:not([type="submit"]) {
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.4s;
+    color: #222;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+form input:not([type="submit"])::placeholder {
+    color: #ccc;
+}
+
+
+/*:valid là dùng để khi có chữ trong input thì nó hiện màu trắng còn không có thì màu bth*/
+
+form input:not([type="submit"]):focus,
+form input:not([type="submit"]):valid {
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="submit"] {
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.4s;
+    color: #222;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
