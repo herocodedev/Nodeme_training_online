@@ -13,7 +13,7 @@ const UserSchema = new Schema({
     authFacebookId: { type: String },
     authGoogleId: { type: String },
 }, {
-    collection: 'Accounts'
+    collection: 'Users'
 });
 
 module.exports = mongoose.model('Users', UserSchema);
