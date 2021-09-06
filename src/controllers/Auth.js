@@ -5,13 +5,6 @@ const app = express()
 var Users = require('../models/User')
 
 class AuthControllers {
-    show(req, res, next) {
-
-    }
-
-}
-/*
-class AuthControllers {
     // [GET] /auth/google
     getGoogle(req, res, next) {
         console.log(123)
@@ -40,6 +33,5 @@ class AuthControllers {
     }
 
 }
-*/
 
 module.exports = new AuthControllers()
