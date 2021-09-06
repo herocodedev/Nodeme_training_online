@@ -157,6 +157,7 @@ app.get('/admin', (req, res, next) => {
 
 passport.use(new LocalStrategy(
     function(username, password, done) {
+        console.log(username)
         User.findOne({
                 username: username,
                 password: password
