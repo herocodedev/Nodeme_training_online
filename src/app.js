@@ -11,7 +11,11 @@ var LocalStrategy = require('passport-local').Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy
 var GoogleStrategy = require('passport-google-oauth2').Strategy;
 const morgan = require('morgan')
-const port = 5000
+const dotenv = require('dotenv')
+
+dotenv.config()
+
+const port = process.env.PORT || 5000
 
 const db = require('./utils/mongoose')
 const Users = require('./models/User');
