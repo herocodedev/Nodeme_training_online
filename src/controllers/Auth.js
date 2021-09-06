@@ -4,6 +4,10 @@ var GoogleStrategy = require('passport-google-oauth2').Strategy;
 const app = express()
 var Users = require('../models/User')
 
+
+
+
+
 class AuthControllers {
     // [GET] /auth/google
     getGoogle(req, res, next) {
