@@ -122,7 +122,7 @@ app.get('/admin', (req, res, next) => {
 passport.use(new FacebookStrategy({
         clientID: '6195697313804323',
         clientSecret: '1e30d72ebfdcd23996657486dd37a828',
-        callbackURL: "http://localhost:5000/auth/facebook/callback",
+        callbackURL: "https://nodemy123.herokuapp.com/auth/facebook/callback",
         profileFields: ['id', 'displayName', 'photos', 'email']
     },
     async function(accessToken, refreshToken, profile, cb) {
